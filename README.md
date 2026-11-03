@@ -283,14 +283,18 @@ flowchart TD
 
 ## Systemdokumentation
 ### Grundlagen
+
+- [Projektdateien](#projektdateien)
+
 ### Entwurf
 
 - [UI Layout](#ui-entwurf)
 - [ER Diagramm](#er-diagramm)
 - [Programmablauf](#programmablauf)
 
-### Begründungen
 ### Code-Erläuterung
+
+Stehen im Quelltext an der jeweiligen stelle
 
 ## Testdokumentation
 ### Testfälle
@@ -397,9 +401,9 @@ Im Großen und ganzen würde ich schon sagen, dass das Projekt gelungen ist und 
 # B · Benutzerdokumentation
 ## Installationsanleitung
 
-[Anwendung herunterladen](anwendung-herunterladen)
+- [Anwendung herunterladen](anwendung-herunterladen)
 
 ## Bedienungsanleitung
 
-[Die Anwendung benutzen](#die-anwendung-benutzen)  
-[Entwicklungsumgebung einrichten und verwenden](#entwicklungsumgebung)
+- [Die Anwendung benutzen](#die-anwendung-benutzen)  
+- [Entwicklungsumgebung einrichten und verwenden](#entwicklungsumgebung)
