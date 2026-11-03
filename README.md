@@ -9,22 +9,7 @@ gespeichert.
 
 ## Übersicht
 
-1. [Verwendung](#die-anwendung-benutzen)
-   - [Anwendung herunterladen](#anwendung-herunterladen)
-   - [Kurze Anleitung](#kurze-anleitung)
-2. [Entwicklungsumgebung](#entwicklungsumgebung)
-   - [Umgebung erstellen](#umgebung-erstellen)
-   - [Anwendung starten](#anwendung-starten)
-   - [Datenbank zurücksetzen](#datenbank-zurücksetzen)
-   - [App kompilieren](#app-kompilieren)
-3. [Anforderungen an das Projekt](#anforderungen)
-4. [UI Entwurf](#ui-entwurf)
-5. [ER Diagramm](#er-diagramm)
-6. [Programmablauf](#programmablauf)
-   - [Gerät anlegen](#gerät-anlegen)
-   - [Typen und Mitarbeiter verwalten](#typen-und-mitarbeiter-verwalten)
-   - [Backup und Wiederherstellung](#backup-und-wiederherstellung)
-7. [Benötigt für die Abgabe](#zur-abgabe-benötigt)
+1. [Benötigt für die Abgabe](#zur-abgabe-benötigt)
    - [Entwicklungsdokumentation](#a--entwicklungsdokumentation)
      - [Projektdokumentation](projektdokumentation)
         - [Anforderungen](#anforderungen)
@@ -43,19 +28,61 @@ gespeichert.
   		- [Installationsanleitung](#installationsanleitung)
    		- [Bedienungsanleitung](äbedienungsanleitung)	
 
-## Die Anwendung benutzen
 
-### Anwendung herunterladen
+2. [Anwendung herunterladen](#anwendung-herunterladen)
+   - [Verwendung](#die-anwendung-benutzen)
+   - [Löschen von Inhalten](#löschen-von-inhalten)
+   - [Übersicht](#übersicht)
+   - [Daten exportieren und importieren](#daten-exportieren-und-importieren)
+   - [Bugs und Features](#bugs-und-features)
+3. [Entwicklungsumgebung](#entwicklungsumgebung)
+   - [Umgebung erstellen](#umgebung-erstellen)
+   - [Anwendung starten](#anwendung-starten)
+   - [Datenbank zurücksetzen](#datenbank-zurücksetzen)
+   - [App kompilieren](#app-kompilieren)
+4. [Anforderungen an das Projekt](#anforderungen)
+5. [UI Entwurf](#ui-entwurf)
+6. [ER Diagramm](#er-diagramm)
+7. [Programmablauf](#programmablauf)
+   - [Gerät anlegen](#gerät-anlegen)
+   - [Typen und Mitarbeiter verwalten](#typen-und-mitarbeiter-verwalten)
+   - [Backup und Wiederherstellung](#backup-und-wiederherstellung)
+
+## Anwendung herunterladen
 
 https://github.com/EnteSuesssauer15/Codename-Winton-Thunder/releases
 
-### Kurze Anleitung
+Wählen Sie die gewünschte Version unter [„Releases“](https://github.com/EnteSuesssauer15/Codename-Winton-Thunder/releases) aus und laden Sie diese herunter  
+Ordner entpacken und die .exe starten
 
-- Beim ersten Start gibt es drei Beispieltypen, aber noch keine Mitarbeiter oder Geräte.
-- Lege zuerst unter `Employees` einen Mitarbeiter und unter `Types` einen Typ mit Kürzel an.
-- Unter `Devices` kannst du ein Gerät erfassen und Typ sowie Mitarbeiter auswählen. Die Inventarnummer wird automatisch erstellt.
-- Das Dashboard zeigt die Anzahl der Geräte, Mitarbeiter und Typen.
-- Unter `Settings` kannst du Geräte, Typen und Mitarbeiter als JSON sichern oder daraus wiederherstellen. Beim Import werden diese Daten ersetzt. „Save Settings“ speichert derzeit keine Einstellungen.
+## Die Anwendung benutzen
+
+### Hinzufügen von Devices, Types und Employees
+
+Standardmäßig sind 3 Beispieltypen angelegt
+Unter Employees müssen über den Button „Add Eymployee“ noch Benutzer hinzugefügt werden.  
+Diese benötigen: Name, Surname und Department, dann anschließend über „Save“ hinzufügen.  
+Über den Reiter Devices werden Geräte über den Button „Add Device“ hinzugefügt.  
+Dort werden nun die bestehenden Types und Employees dem Device zugewiesen.
+
+### Löschen von Inhalten
+
+Das Löschen funktioniert bei allen 3 Reitern über die Auswahl des Gerätes und dem anschließenden Drücken des „delete selected“ Buttons.  
+Achtung: Types und Employees können nur gelöscht werden, wenn sie keinem Device mehr zugeordnet sind.
+
+### Übersicht
+
+Unter dem Reiter „Home“ werden Informationen über die Menge an Devices, Employees und Device Types angegeben eine weitere Interaktion ist hier jedoch nicht vorgesehen
+
+### Daten exportieren und importieren
+
+Um die Daten zu exportieren muss in den Einstellungen der Button „Backup and export all data“ ausgewählt werden und ein Zielort bestimmt werden.  
+Zum importieren kann diese Datei nun über „Import and restore all data“ wieder hinzugefügt werden.  
+Unter Settings wird der aktuelle Datenbankpfad angezeigt.
+
+### Bugs und Features
+
+Um Bugs oder gewünschte Features einzureichen, wird dies über die Issues im Repository bearbeitet
 
 ## Projektdateien
 
@@ -236,8 +263,6 @@ flowchart TD
 
 [KeepIt Dokumentation](https://docs.google.com/document/d/1DGke-Ds1Lg0tazXipkGuDV4cOVIw2nPy0Qg5TGpkDDk/edit?usp=sharing)
 
-
-
 # Zur Abgabe benötigt
 
 # A · Entwicklungsdokumentation
@@ -251,9 +276,9 @@ flowchart TD
 
 ### Aufgabenverteilung
 
-- Lars
-- Laura
-- Joshua
+- Lars -> Zusammenfassende Präsentation
+- Laura -> Testdokumentation
+- Joshua -> Bedienungsanleitung
 - Nico -> Entwicklung
 
 ## Systemdokumentation
@@ -362,13 +387,19 @@ Im grunde hat die KI mir geholfen zu verstehen wie Die Bibliothek funktioniert, 
 
 In der `dashboard.py` und `settings.py` wurde fast ausschließlich von KI geschrieben und selbst kommentiert, aufgrund der komplexität des Importierens und Exportierens samt öffnen einer Dateiauswahl ging das auf dem weg wesentlich schneller und möglicherweise auch übersichtlicher als selbst geschrieben.
 
-wofür KI genutzt wurde, was ihr selbst verändert habt
-
 ## Reflexion
-Was war schwierig, was würdet ihr heute anders machen?
+
+Es war schwierig den Code sauber zu gestalten, sodass jeder ihn auch verstehen und lesen kann.  
+Ich denke jedoch, dass es relativ gelungen ist nachdem man sich in die Syntax und Konstruktion etwas reingelesen hat.  
+  
+Im Großen und ganzen würde ich schon sagen, dass das Projekt gelungen ist und es nur minimale Berbesserungen gäbe.
 
 # B · Benutzerdokumentation
 ## Installationsanleitung
-Voraussetzungen, Start des Tools
+
+[Anwendung herunterladen](anwendung-herunterladen)
+
 ## Bedienungsanleitung
-Funktionen, Beispielablauf, Verhalten bei Fehlern
+
+[Die Anwendung benutzen](#die-anwendung-benutzen)  
+[Entwicklungsumgebung einrichten und verwenden](#entwicklungsumgebung)
