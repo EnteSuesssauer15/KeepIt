@@ -401,7 +401,7 @@ Im Großen und ganzen würde ich schon sagen, dass das Projekt gelungen ist und 
 # B · Benutzerdokumentation
 ## Installationsanleitung
 
-- [Anwendung herunterladen](anwendung-herunterladen)
+- [Anwendung herunterladen](#anwendung-herunterladen)
 
 ## Bedienungsanleitung
 
