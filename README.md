@@ -259,9 +259,6 @@ flowchart TD
     N --> O["Geräte mit aktualisierten Mitarbeiter-IDs einfügen"]
 ```
 
-## Link zur Dokumentation
-
-[KeepIt Dokumentation](https://docs.google.com/document/d/1DGke-Ds1Lg0tazXipkGuDV4cOVIw2nPy0Qg5TGpkDDk/edit?usp=sharing)
 
 # Zur Abgabe benötigt
 
