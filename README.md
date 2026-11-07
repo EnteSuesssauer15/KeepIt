@@ -59,7 +59,7 @@ Ordner entpacken und die .exe starten
 
 ### Hinzufügen von Devices, Types und Employees
 
-Standardmäßig sind 3 Beispieltypen angelegt
+Standardmäßig sind 3 Beispieltypen angelegt. <br>
 Unter Employees müssen über den Button „Add Eymployee“ noch Benutzer hinzugefügt werden.  
 Diese benötigen: Name, Surname und Department, dann anschließend über „Save“ hinzufügen.  
 Über den Reiter Devices werden Geräte über den Button „Add Device“ hinzugefügt.  
@@ -72,17 +72,17 @@ Achtung: Types und Employees können nur gelöscht werden, wenn sie keinem Devic
 
 ### Übersicht
 
-Unter dem Reiter „Home“ werden Informationen über die Menge an Devices, Employees und Device Types angegeben eine weitere Interaktion ist hier jedoch nicht vorgesehen
+Unter dem Reiter „Home“ werden Informationen über die Menge an Devices, Employees und Device Types angegeben. Eine weitere Interaktion ist hier jedoch nicht vorgesehen.
 
 ### Daten exportieren und importieren
 
 Um die Daten zu exportieren muss in den Einstellungen der Button „Backup and export all data“ ausgewählt werden und ein Zielort bestimmt werden.  
-Zum importieren kann diese Datei nun über „Import and restore all data“ wieder hinzugefügt werden.  
+Zum Importieren kann diese Datei nun über „Import and restore all data“ wieder hinzugefügt werden.  
 Unter Settings wird der aktuelle Datenbankpfad angezeigt.
 
 ### Bugs und Features
 
-Um Bugs oder gewünschte Features einzureichen, wird dies über die Issues im Repository bearbeitet
+Um Bugs oder gewünschte Features einzureichen, wird dies über die Issues im Repository bearbeitet.
 
 ## Projektdateien
 
@@ -266,8 +266,8 @@ flowchart TD
 ## Projektdokumentation
 ### Anforderungen
 
-- Übersichtliche und einleuchtende Darstellung sowie bedienung
-- Eindeutige Inventarnummer mit Kürzel jenachdem welches Gerät inventarisiert wird
+- Übersichtliche und einleuchtende Darstellung sowie Bedienung
+- Eindeutige Inventarnummer mit Kürzel je nachdem welches Gerät inventarisiert wird
 - Suchfunktion
 - Import/Export der Daten
 
@@ -291,7 +291,7 @@ flowchart TD
 
 ### Code-Erläuterung
 
-Stehen im Quelltext an der jeweiligen stelle
+Stehen im Quelltext an der jeweiligen Stelle
 
 ## Testdokumentation
 ### Testfälle
@@ -383,17 +383,17 @@ Die unter Punkt 1 genannte Software erfüllt die Anforderungen vollständig
 ### Fazit
 ## Verwendung von KI
 
-KI wurde meist als hilfestellung für syntax verwendet, sprich copilot autocomplete oder beispiele gegeben wie mit der GUI programmiert wird es aber selbst implementiert.
-Im grunde hat die KI mir geholfen zu verstehen wie Die Bibliothek funktioniert, bei der im vergleich die offizielle Dokumentation mir nicht weitergeholfen hat.
+KI wurde meist als Hilfestellung für Syntax verwendet, sprich copilot autocomplete oder Beispiele gegeben, wie mit der GUI programmiert wird, es aber selbst implementiert.
+Im Grunde hat die KI mir geholfen zu verstehen, wie die Bibliothek funktioniert, bei der im Vergleich die offizielle Dokumentation mir nicht weitergeholfen hat.
 
-In der `dashboard.py` und `settings.py` wurde fast ausschließlich von KI geschrieben und selbst kommentiert, aufgrund der komplexität des Importierens und Exportierens samt öffnen einer Dateiauswahl ging das auf dem weg wesentlich schneller und möglicherweise auch übersichtlicher als selbst geschrieben.
+Die `dashboard.py` und `settings.py` wurde fast ausschließlich von KI geschrieben und selbst kommentiert, aufgrund der Komplexität des Importierens und Exportierens samt Öffnen einer Dateiauswahl. Das ging auf dem Weg wesentlich schneller und möglicherweise auch übersichtlicher als selbst geschrieben.
 
 ## Reflexion
 
 Es war schwierig den Code sauber zu gestalten, sodass jeder ihn auch verstehen und lesen kann.  
 Ich denke jedoch, dass es relativ gelungen ist nachdem man sich in die Syntax und Konstruktion etwas reingelesen hat.  
   
-Im Großen und ganzen würde ich schon sagen, dass das Projekt gelungen ist und es nur minimale Berbesserungen gäbe.
+Im Großen und ganzen würde ich schon sagen, dass das Projekt gelungen ist und es nur minimale Verbesserungen gäbe.
 
 # B · Benutzerdokumentation
 ## Installationsanleitung
