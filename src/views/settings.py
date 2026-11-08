@@ -241,7 +241,6 @@ def SettingsView():
                     ft.Text("Database Path:"), 
                     ft.Text(str(Path(db_manager.db_name).resolve()), selectable=True),
                 ]),
-                bgcolor=ft.Colors.BLUE_GREY_900,
                 border=ft.Border.all(1, ft.Colors.BLUE_ACCENT),
                 border_radius=6,
                 padding=10,
